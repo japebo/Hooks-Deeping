@@ -11,9 +11,9 @@ export const MultipleCustomHooks = () => {
     // console.log(state);
     const { author, quote } = !!data && data[0];
 
-    if (author && quote) {
-        console.log(author, quote);
-    }
+    // if (author && quote) {
+    //     console.log(author, quote);
+    // }
 
     return (
         <div>
