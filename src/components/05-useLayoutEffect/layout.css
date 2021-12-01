@@ -1,0 +1,8 @@
+
+body {
+    padding: 70px;
+}
+
+.blockquote {
+    display: flex; /*para que el width del elemento blockquote cambie de acuerdo al largo del quote  */
+}
