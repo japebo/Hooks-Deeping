@@ -4,7 +4,7 @@ import '../02-useEffect/effects.css'
 
 export const FocusScreen = () => {
 //este es un ejemplo de uso del hook useRef, pero es preferible hacerlo a través de document.queryselector(), pues no hay que importar nada, y funciona de la misma forma. 
-    const inputRef = useRef(); //crea una referencia mutable a cualquier elemento HTML, en este caso al elemento input, que se le quiere hacer un focus
+    const inputRef = useRef(); //crea una referencia mutable a cualquier elemento HTML, en este caso al elemento input, al que se le quiere hacer un focus
     
     const handleClick = () => {
         // document.querySelector('input').select();

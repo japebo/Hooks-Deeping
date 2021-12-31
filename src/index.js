@@ -15,11 +15,12 @@ import ReactDOM from 'react-dom';
 // import { HooksApp } from './HooksApp';
 // import { TodoApp } from "./components/08-useReducer/TodoApp";
 
-import { MainApp } from './components/09-useContext/MainApp';
+// import { MainApp } from './components/09-useContext/MainApp';
+import { TodoApp } from './components/08-useReducer/TodoApp';
 
 // import './components/08-useReducer/intro-reducer.js';
 
 ReactDOM.render(
-    <MainApp />,
+    <TodoApp />,
   document.getElementById('root')
 );

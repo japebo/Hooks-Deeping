@@ -4,20 +4,20 @@ import { useForm } from '../../hooks/useForm';
 
 export const TodoAdd = ({handleAdd}) => {
     const [ formValue, handleInputChange, reset ] = useForm({
-        description: ''
+        task: ''
     });
 
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        if ( formValue.description.trim().length <=1 ) {
+        if ( formValue.task.trim().length <= 1 ) {
             reset();
             return;
         }
         
         handleAdd( {
             id: new Date().getTime(),
-            task: formValue.description,
+            task: formValue.task,
             done: false    
         })
 
@@ -31,10 +31,10 @@ export const TodoAdd = ({handleAdd}) => {
             <form onSubmit={ handleSubmit }>
                 <input
                     type="text"
-                    name="description"
+                    name="task"
                     className='form-control'
                     placeholder="Aprender..."
-                    value={ formValue.description }
+                    value={ formValue.task }
                     autoComplete="off"
                     onChange={ handleInputChange }
                 />
